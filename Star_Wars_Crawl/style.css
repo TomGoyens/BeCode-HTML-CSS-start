@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #000;
+  font-size: 32px;
+}
+
+.background{
+  height: 100%;
+  width: 100%;
+  animation: popup;
+  animation-duration: 10.1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.image img{
+  height: auto;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.fall{
+  animation-name: fall;
+  animation-duration: 15s;
+  animation-delay: 10s;
+  animation-timing-function: ease-out;
+
+}
+
+.opentext{
+  width: 100%;
+  height: 100%;
+}
+
+h3{
+  color: #33ACC4;
+  font-size: 28px;
+  animation: introfade 6s forwards;
+  animation-delay: 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.text{
+  overflow: hidden;
+  transform: perspective(400px) rotateX(50deg);
+  width: 40%;
+  height: 5000px;
+  top: 20%;
+  -webkit-mask-image: -webkit-gradient(linear, center bottom, center top, from(rgba(0,0,0,1)), color-stop(80%, rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.textcrawl {
+  color: #FFF;
+  animation-name: scroll;
+  opacity: 0;
+  animation-delay: 12s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  width:100%;
+  font-weight: bold;
+}
+
+p{
+  text-align: justify;
+  margin-bottom: 1em;
+  width:100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image{
+  height: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes scroll {
+  from{
+    transform: translate3d(0, 80%, 0);
+    opacity: 1;
+  }
+  to{
+    transform:translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  0%{
+    height: 100%;
+    width: auto;
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    height: 20%;
+    width: auto;
+    opacity: 0;
+  }
+}
+
+@keyframes introfade{
+  0%{
+    opacity: 0;
+  }
+  17%{
+    opacity: 1;
+  }
+  83%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes popup{
+  0% {
+    opacity: 0;
+  }
+  99.9%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

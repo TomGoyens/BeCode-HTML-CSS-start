@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class= "grid">
+        <div class="box banner">
+          <div class="container">
+            <img src="Images/T-icon.png" alt="T-icon" />
+            <h1>Tom's grand Checkout Form</h1>
+            <p>Below is an example of how I would go about having poeple give me their money</p>
+          </div>
+        </div>
+
+        <div class="box CartHead">
+          <h2>Your cart<h2>
+          <p class="NumOfItems">3<p>
+        </div>
+        <div class="box Cart">
+          <ul class="CartList">
+            <li class="CartItem"><span><p class="ItemName">1st item</p><p>item desription</p></span><p>€5</p></li>
+            <li class="CartItem"><span><p class="ItemName">item the second</p><p>item desription</p></span><p>€55</p></li>
+            <li class="CartItem"><span><p class="ItemName">there is a third item also</p><p>item desription</p></span><p>€559</p></li>
+            <li class="PromoCoooooooooooode"><span><p>promo coooooooooooode!</p><p>EXAMPLEPROMOCODE</p></span><p>€moneeeeeeeeeeeeeee</p></li>
+            <li class="CartTotal"><p>Total(€)</p><p>€lots</li>
+          </ul>
+        </div>
+
+        <div class="box BillingAdress">
+          <h2>Billing Adress</h2>
+        </div>
+        <div class="BigForm">
+          <form action="" name="bigform" class="formgrid">
+            <div class="box firstname">
+              <label for="FirstName">First Name:</label>
+              <input type="text" name="FirstName" id="FirstName" placeholder="" class="input"/>
+            </div>
+            <div class="box lastname">
+              <label for="LastName">Last Name:</label>
+              <input type="text" name="LastName" id="LastName" placeholder="" class="input"/>
+            </div>
+            <div class="box username">
+              <label for="Username">username:</label>
+              <div class="input-group">
+                <div class="input-group-icon">@</div>
+                <div class="input-group-area"><input type="text" name="Username" id="Username" placeholder="Username"/></div>
+              </div>
+            </div>
+            <div class="box email">
+              <label for="Email">E-mail adress:</label>
+              <input type="text" name="Email" id="Email" placeholder="you@example.com" class="input"/>
+            </div>
+            <div class="box adress">
+              <label for="Adress">Adress:</label>
+              <input type="text" name="Adress" id="Adress" placeholder="" class="input"/>
+            </div>
+            <div class="box adress2">
+              <label for="Adress2">Adress 2 (optional):</label>
+              <input type="text" name="Adress2" id="Adress2" placeholder="" class="input"/>
+            </div>
+            <div class="box place">
+              <div class="place_country">
+                <label for="Country">Country:</label>
+                <input list="Countries" name="Country" id="Country" class="input"/>
+              </div>
+              <div class="place_province">
+                <label for="Province">Province:</label>
+                <input list="Provinces" name="Province" id="Province" class="input"/>
+              </div>
+              <div class="place_zip">
+                <label for="Zip">Zip:</label>
+                <input type="number" name="Zip" id="Zip" class="input"/>
+              </div>
+
+                <datalist id="Countries">
+                  <option value="België">
+                  <option value="Belgien">
+                  <option value="Belgium">
+                  <option value="Belgique">
+                  <option value="Бельгия">
+                </datalist>
+                <datalist id="Provinces">
+                  <option value="Limburg">
+                  <option value="Limbourg">
+                </datalist>
+            </div>
+            <div class="box shipping">
+              <input type="checkbox" name="Shipping" id="Shipping" />
+              <label for="Shipping">Shipping address is the same as my billing address</label></br>
+              <input type="checkbox" name="SaveShipping" id="SaveShipping" />
+              <label for="SaveShipping">Save this information for next time</label>
+            </div>
+            <div class="box payment">
+              <h2>Payment</h2>
+            </div>
+            <div class="box paymethod">
+              <input type="radio" name="Paymethod" value="Credit card">Credit card<br>
+              <input type="radio" name="Paymethod" value="Debit card">Debit card <br>
+              <input type="radio" name="Paymethod" value="Paypal">Paypal <br>
+            </div>
+            <div class="box cardname">
+              <label for="CardName">Name on card:</label>
+              <input type="text" name="CardName" id="CardName" placeholder="Full name as displayed on card" class="input"/>
+            </div>
+            <div class="box cardnumber">
+              <label for="CardNumber">Credit card number</label>
+              <input type="text" name="CardNumber" id="CardNumber" placeholder="" class="input"/>
+            </div>
+            <div class="box expandcvv">
+              <div class="expiration">
+                <label for="Expiration">Expiration</label>
+                <input type="text" name="Expiration" id="Expiration" placeholder="" class="input"/>
+              </div>
+              <div class="CVV">
+                <label for="CVV">CVV</label>
+                <input type="text" name="CVV" id="CVV" placeholder="" class="input"/>
+              </div>
+            </div>
+            <div class="box SUBMIT">
+              <input type="submit" value="Continue to checkout" class="submitbutton">
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <footer>
+            <p>I don't have a copyright, can I still use the symbol just 'cause?</p>
+            <p> <a href="https://tomgoyens.github.io/Challenge-Landingspagina/">This</a> is me, give me money pls.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

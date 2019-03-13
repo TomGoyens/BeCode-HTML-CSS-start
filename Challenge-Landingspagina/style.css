@@ -1,0 +1,285 @@
+body{
+  margin: 0px;
+  font-family: sans-serif;
+  color: #3e506d;
+}
+
+h3{
+  margin-top: 5%;
+}
+
+/*deze site werkt met een grid*/
+.grid{
+  display: grid;
+  grid-template: repeat(41,minmax(50px,6.25VW)) / 1fr repeat(6, minmax(100px,12.5VW)) 1fr;
+}
+
+/*de header wordt hier aangepast*/
+.header{
+  grid-area: 1/1/span 1/span 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to top,#49A4DD,#3e506d);
+}
+
+.header img{
+  height: 100%;
+  width: auto;
+}
+
+nav ul{
+  list-style-type: none;
+  height: 100%;
+  padding: 1em;
+}
+
+nav li{
+  display: inline;
+}
+
+nav li:hover{
+  opacity: 0.7;
+}
+
+nav a{
+  color: #FFF;
+  padding: 1em;
+}
+
+/*Jumbotron Yeah!*/
+.Jumbotron{
+  grid-area: 2/1/span 6/ span 8;
+  position: relative;
+  font-family: serif;
+}
+
+.Jumbotron p{
+  color: #FFF;
+}
+
+.Jumbotron img{
+  height: 100%;
+  width: 100%;
+}
+
+/*drie... dingen*/
+.tripple{
+  grid-area: 8/1/span 5/ span 8;
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+}
+
+.tripple p {
+  padding: 10%;
+  max-width: 33.333333%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.tripple p:hover {
+  font-size: 2em;
+}
+
+/*middensectie van de pagina*/
+.mid1{
+  grid-area: 13/ 1 / span 6 / span 4;
+  position: relative;
+}
+
+.mid2{
+  grid-area: 13/ 5 / span 6 / span 4;
+  overflow: hidden;
+}
+
+.mid3{
+  grid-area: 19/ 1 / span 6 / span 4;
+  overflow: hidden;
+}
+
+.mid4{
+  grid-area: 19/ 5 / span 6 / span 4;
+  position: relative;
+}
+
+.mid5{
+  grid-area: 25/ 1 / span 6 / span 4;
+  position: relative;
+}
+
+.mid6{
+  grid-area: 25/ 5 / span 6 / span 4;
+  overflow: hidden;
+}
+
+.midfit {
+  height: 37.5VW;
+  min-height: 300px;
+  width: 50VW;
+  min-width: 400px;
+}
+
+/* belangrijke getuigenissen van uitstekende leden van de gemeenschap*/
+.testimony{
+  grid-area: 31/ 1/span 5/ span 8;
+  background-color: #f9f9f9;
+}
+
+.testimony h3{
+  text-align: center;
+}
+
+.testimonydiv{
+  height: 92%;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ImgText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25VW;
+}
+
+
+.profilecut{
+  height: 5em;
+  width: auto;
+  border-radius: 50%;
+  box-shadow:2px 2px 2px #999;
+}
+
+/* 2de Jumbo Woo! (geef credit pls)*/
+.bottomJumbo{
+  grid-area: 36 /1/span 4/ span 8;
+  position: relative;
+  color: #FFF;
+}
+
+.bottomJumbo img{
+  height: 100%;
+  width: 100%;
+}
+
+input[type=number]{
+  all: unset;
+  border: none;
+  border-radius: 2px;
+  color: #3e506d;
+  background-color: #FFF;
+  padding: 5px;
+}
+
+input[type=button]{
+  all: unset;
+  border: none;
+  border-radius: 2px;
+  font-family: sans-serif;
+  color: #FFF;
+  background-color: #3e506d;
+  padding: 7px;
+  cursor: pointer;
+}
+
+input[type=button]:hover{
+  opacity: 0.8;
+}
+
+input[type=button]:active{
+  background-color: #212030;
+}
+
+/*footer...*/
+.footer{
+  grid-area: 40/ 1 / span 2 / span 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom,#398CCE,#3e506d);
+}
+
+/*algemene stylings*/
+.centered{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 850px) {
+  .grid{
+    grid-template: repeat(108,minmax(50px,6.25VW)) / 1fr repeat(6, minmax(100px,12.5VW)) 1fr;
+  }
+  .header{
+    grid-area: 1/1/span 1/span 8;
+  }
+  .Jumbotron{
+    grid-area: 2/1/span 6/ span 8;
+  }
+
+  .tripple{
+    grid-area: 8/1/span 5/ span 8;
+  }
+
+  .mid1{
+    grid-area: 13/ 1 / span 12 / span 8;
+  }
+
+  .mid2{
+    grid-area: 25/ 1 / span 12 / span 8;
+  }
+
+  .mid4{
+    grid-area: 37/ 1 / span 12 / span 8;
+  }
+
+  .mid3{
+    grid-area: 49/ 1 / span 12 / span 8;
+  }
+
+  .mid5{
+    grid-area: 61/ 1 / span 12 / span 8;
+  }
+
+  .mid6{
+    grid-area: 73/ 1 / span 12 / span 8;
+  }
+
+  .midfit {
+    height: 75VW;
+    width: 100VW;
+  }
+
+  .testimony{
+    grid-area: 85/ 1/span 18/ span 8;
+  }
+
+  .testimonydiv{
+    height: 90%;
+    margin: 0 ;
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .bottomJumbo{
+    grid-area: 103/1/span 4/ span 8;
+  }
+
+  .footer{
+    grid-area: 107/ 1 / span 2 / span 8;
+  }
+}

@@ -1,0 +1,86 @@
+h1{
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1000%;
+}
+
+p{
+  width: 100%;
+}
+
+.text{
+  text-align: center;
+  opacity: 0.5;
+  font-family: Helvetica, Arial, sans-serif, monospace;
+}
+
+.bg_img{
+  background-image: url("Old-Husk-Grey-Seamless-Pattern-For-Website-Background.jpg");
+  z-index: -2;
+}
+
+.background {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  width: 200px;
+  height: auto;
+  margin-left: -100px;
+  animation-name: fadein;
+  animation-duration: 10s;
+  z-index: -1;
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.button{
+  color: black;
+  text-align: center;
+  display: inline-block;
+  border:2px solid black;
+  border-radius: 4px;
+  background-color: #FFF;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 50px;
+}
+
+.button:hover{
+  box-shadow:1px 1px 1px black;
+  cursor: pointer;
+}
+
+.button span{
+  position:relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  right:-4px;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button span:after{
+  position: relative;
+  content:'\00bb';
+  opacity: 0;
+  right:5px;
+  transition: 0.5s;
+  -webkit-transition: all 0.5s
+}
+
+
+.button:hover span::after{
+  opacity: 1;
+  right: -3px;
+}

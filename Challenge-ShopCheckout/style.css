@@ -1,0 +1,416 @@
+*{
+  margin: 0;
+}
+
+body{
+  font-family: Arial ,sans-serif;
+  color: #0c1021;
+  background-color: #f9f9ff;
+}
+
+.input{
+  width: 100%;
+  padding: 8px;
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.submitbutton{
+  color:#fff;
+  background-color: #3e86f9;
+  font-family: ARial ,sans-serif;
+  font-size: 1.3em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=submit]{
+  width: 100%;
+  height: 70%;
+  margin-top: 3%;
+}
+
+h2{
+  font-weight: 400;
+}
+
+.container{
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.banner img{
+  height: 50px;
+  border: 3px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.NumOfItems{
+  height: 1.2em;
+  width: 1.5em;
+  color: #fff;
+  background-color: #616e82;
+/*  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;*/
+  border-radius: 40% / 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CartList{
+  list-style: none;
+  padding: 0;
+}
+
+.CartItem{
+  width: 90%;
+  height: 3em;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: #c4c4c4;
+  background-color: #fff;
+}
+
+.ItemName{
+  color: #0c1021;
+}
+
+.PromoCoooooooooooode{
+  width: 90%;
+  height: 3.5em;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  color: #0da529;
+  padding: 5%;
+}
+.CartTotal{
+  width: 90%;
+  height: 2em;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #fff;
+}
+
+.input-group{
+  display: table;
+  width: 100%;
+}
+
+.input-group > div{
+  display: table-cell;
+  vertical-align: middle;  /* needed for Safari */
+}
+
+.input-group-icon{
+  background:#eee;
+  color: #777;
+  padding: 4px;
+  width: 5%;
+  border: solid 1px #aaa;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-group-area{
+  border: solid 1px #aaa;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.input-group input{
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+a{
+  display: inline-block;
+  padding: 3px 10px;
+  color: #fff;
+  background-color: #3e86f9;
+}
+
+.box{
+  position: relative;
+  margin: 0 5%;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
+}
+
+.grid{
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template: 300px 100px 1000px 75px / repeat(12, 1fr);
+}
+
+.banner{
+  grid-area: 1 / 1 / span 1 / span 12;
+}
+
+.CartHead{
+  grid-area: 2 / 9 / span 1 / span 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Cart{
+  grid-area: 3 / 9 / span 1 / span 4;
+  margin-top: 1vw;
+}
+
+.BillingAdress{
+  grid-area: 2 / 1 / span 1 / span 8;
+  display: flex;
+  align-items: center;
+}
+
+.BigForm{
+  grid-area: 3 / 1 / span 1 / span 8;
+  position: relative;
+  margin: 1vw 0;
+}
+
+.formgrid{
+  display: grid;
+  grid-template: repeat(12, 75px) / 50% 1fr;
+}
+
+  .firstname{
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin-right: 5%;
+    margin-left: 10%;
+  }
+
+  .lastname{
+    grid-area: 1 / 2 / span 1 / span 1;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .username{
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+
+  .email{
+    grid-area: 3 / 1 / span 1 / span 2;
+  }
+
+  .adress{
+    grid-area: 4 / 1 / span 1 / span 2;
+  }
+
+  .adress2{
+    grid-area: 5 / 1 / span 1 / span 2;
+  }
+
+  .place{
+    grid-area: 6 / 1 / span 1 / span 2;
+    display: grid;
+    grid-template: 1fr / 40% 30% 30%;
+  }
+
+    .place_country{
+      grid-area: 1 / 1 / span 1 / span 1;
+      margin-right: 5%;
+    }
+
+    .place_province{
+      grid-area: 1 / 2 / span 1 / span 1;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .place_zip{
+      grid-area: 1 / 3 / span 1 / span 1;
+      margin-left: 5%;
+    }
+
+
+  .shipping{
+    grid-area: 7 / 1 / span 1 / span 2;
+  }
+
+  .payment{
+    grid-area: 8 / 1 / span 1 / span 2;
+  }
+
+  .paymethod{
+    grid-area: 9 / 1 / span 1 / span 2;
+  }
+
+  .cardname{
+    grid-area: 10 / 1 / span 1 / span 1;
+    margin-left: 10%;
+  }
+
+  .cardnumber{
+    grid-area: 10 / 2 / span 1 / span 1;
+    margin-right: 10%;
+  }
+
+  .expandcvv{
+    grid-area: 11 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template: 75px / 50% 50%;
+    margin-left: 10%;
+  }
+
+    .expiration{
+      grid-area: 1 / 1 / span 1 / span 1;
+      margin-right: 5%;
+    }
+
+    .CVV{
+      grid-area: 1 / 2 / span 1 / span 1;
+      margin-left: 5%;
+    }
+
+  .SUBMIT{
+    grid-area: 12 / 1 / span 1 / span 2;
+    border-top: solid 1px #ddd;
+  }
+
+.footer{
+  grid-area: 4 / 1 / span 1 / span 12;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+
+  .grid{
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template: 300px 100px 500px 100px 1250px 75px/ repeat(12, 1fr);
+  }
+
+  .CartHead{
+    grid-area: 2 / 1 / span 1 / span 12;
+  }
+
+  .Cart{
+    grid-area: 3 / 1 / span 1 / span 12;
+  }
+
+  .BillingAdress{
+    grid-area: 4 / 1 / span 1 / span 12;
+  }
+
+  .BigForm{
+    grid-area: 5 / 1 / span 1 / span 12;
+  }
+
+  .formgrid{
+    display: grid;
+    grid-template: repeat(16, 75px) / 1fr 1fr;
+  }
+
+    .firstname{
+      grid-area: 1 / 1 / span 1 / span 2;
+      margin: 0 5%;
+
+    }
+
+    .lastname{
+      grid-area: 2 / 1 / span 1 / span 2;
+      margin: 0 5%;
+    }
+
+    .username{
+      grid-area: 3 / 1 / span 1 / span 2;
+    }
+
+    .email{
+      grid-area: 4 / 1 / span 1 / span 2;
+    }
+
+    .adress{
+      grid-area: 5 / 1 / span 1 / span 2;
+    }
+
+    .adress2{
+      grid-area: 6 / 1 / span 1 / span 2;
+    }
+
+    .place{
+      grid-area: 7 / 1 / span 3 / span 2;
+      display: grid;
+      grid-template: repeat(3, 75px) / 1fr ;
+    }
+
+        .place_country{
+          grid-area: 1 / 1 / span 1 / span 1;
+          margin: 0;
+        }
+
+        .place_province{
+          grid-area: 2 / 1 / span 1 / span 1;
+          margin: 0;
+        }
+
+        .place_zip{
+          grid-area: 3 / 1 / span 1 / span 1;
+          margin: 0;
+        }
+
+    .shipping{
+      grid-area: 10 / 1 / span 1 / span 2;
+    }
+
+    .payment{
+      grid-area: 11 / 1 / span 1 / span 2;
+    }
+
+    .paymethod{
+      grid-area: 12 / 1 / span 1 / span 2;
+    }
+
+    .cardname{
+      grid-area: 13 / 1 / span 1 / span 2;
+      margin: 0 5%;
+    }
+
+    .cardnumber{
+      grid-area: 14 / 1 / span 1 / span 2;
+      margin: 0 5%;
+    }
+
+    .expandcvv{
+      grid-area: 15 / 1 / span 1 / span 2;
+      margin: 0 5%;
+    }
+
+    .SUBMIT{
+      grid-area: 16 / 1 / span 1 / span 2;
+      margin: 0 5%;
+    }
+
+  .footer{
+    grid-area: 6 / 1 / span 1 / span 12;
+  }
+
+}

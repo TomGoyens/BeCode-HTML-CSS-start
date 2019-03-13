@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+}
+
+body{
+  background-color: #EBEBEB;
+  color: #666;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+}
+
+h1{
+  color: #D95252;
+  margin-bottom: 0.5em;
+  font-weight: 800;
+}
+
+h2{
+  text-align: center;
+  font-weight: normal;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+p{
+  text-align: justify;
+  line-height: 2;
+}
+
+.image-cropper {
+  object-fit: cover;
+}
+
+.profilepic {
+  border-radius: 50%;
+  border: 5px solid #AAA;
+  height: 175px;
+  width: auto;
+  margin-top: 30px;
+}
+.redbutton{
+  background-color: #D95252;
+  display: inline-block;
+  color: #FFF;
+  width: 200px;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redbutton:hover{
+  background-color: #e05c6b;
+}
+
+.socialmedialist{
+  width: 70%;
+  height: 150px;
+  list-style-type: none;
+  padding-inline-start: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialmediablocks{
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  margin: 5px;
+  color: #CCC;
+  transition: 0.5s;
+}
+
+.fab{
+  font-size: 1.5em;
+}
+
+.socialmediablocks:hover{
+  font-size: 1.3em;
+}
+
+.button{
+  display: inline-block;
+  color: #CCC;
+  text-decoration: none;
+}
+
+.movieinfo{
+  padding: 0 30px;
+}
+
+.imgfit{
+  width: 100%;
+  height: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template: repeat(6, 325px) 200px/ 1fr 900px 1fr;
+  grid-row-gap: 30px;
+  margin: 30px;
+}
+
+.box{
+  box-shadow: 0 0 2px 2px #ccc;
+  background-color: #FFF;
+  padding: 50px;
+  border-radius: 3px;
+}
+
+.profile{
+  grid-area: 1 / 2 / span 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links{
+  grid-area: 3 / 2 / span 1 / span 1;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.movies{
+  grid-area: 4 / 2 / span 4 / span 1;
+  display: grid;
+  grid-template: 150px repeat(3, 350px) / 150px 1fr;
+}
+
+.mheader{
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.mimage1{
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.mimage2{
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.mimage3{
+  grid-area: 4 / 1 / span 1 / span 1;
+}
+
+.mdescritpion1{
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.mdescritpion2{
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.mdescritpion3{
+  grid-area: 4 / 2 / span 1 / span 1;
+}
