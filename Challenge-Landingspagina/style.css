@@ -20,7 +20,8 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to top,#49A4DD,#3e506d);
+  background-image: linear-gradient(to top,rgba(0, 0, 0, 0),#3e506d);
+  z-index: 1;
 }
 
 .header img{
@@ -49,7 +50,7 @@ nav a{
 
 /*Jumbotron Yeah!*/
 .Jumbotron{
-  grid-area: 2/1/span 6/ span 8;
+  grid-area: 1/1/span 6/ span 8;
   position: relative;
   font-family: serif;
 }
